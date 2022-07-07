@@ -40,6 +40,7 @@ RUN docker-php-ext-install soap
 RUN docker-php-ext-install xml
 RUN docker-php-ext-install xsl
 RUN docker-php-ext-install zip
+
 RUN docker-php-ext-enable bcmath
 RUN docker-php-ext-enable sockets
 RUN docker-php-ext-enable curl
