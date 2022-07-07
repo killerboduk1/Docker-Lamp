@@ -43,6 +43,16 @@ services:
     networks:
       - lamp-docker      
 
+  adminer:
+    depends_on:
+    - db
+    image: adminer
+    restart: always
+    ports:
+      - 8002:8080
+    networks:
+      - lamp-docker     
+
 
 networks:
   lamp-docker:
